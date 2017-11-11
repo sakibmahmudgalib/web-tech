@@ -1,0 +1,99 @@
+
+<html>
+
+   <head>
+      <title>AIUB BOOK STORE</title>
+   </head>
+
+   <body>
+      <table width = "100%" height="">
+         
+         <tr>
+            <td colspan = "2" bgcolor = "steelblue" align="right" >
+               <h1 style="color:white" align="center">AIUB BOOK STORE</h1>
+			   <a href="../table/home.html"  ><b style="color:white"><font size="4.5" >Logged in as<font size="5"> <!--?php echo $auname; ?--></font> </font></b></a>
+				<b>|</b>
+				<a href="../table/login.html" ><b style="color:white"><font size="4.5">Logout</font></a> 
+            </td>
+         </tr>
+         <tr valign = "top" height="500">
+            <td bgcolor = "#48D1CC" width ="">
+               <b>Account</b><br /><hr/>
+			   <ul>
+            <h3>
+				 <a href="../admin/bord.html"> <li> Dashbord</a><br />
+				 <a href="../admin/adminpro.html"> <li> View Profile</a><br />
+				 <a href="../admin/editpro.html"> <li>Edit Profile</a><br />
+				 <a href="../admin/profile.html"> <li> Change Profile Picture</a><br />
+				<a href="../admin/reset_password.html">  <li> Change Password</a><br />
+				<a href="../table/login.html">  <li> Logout</a><br /><br/>
+				
+				 
+			</h3>
+			
+			   </ul>
+			   
+			 <hr/> <b>Users</b><br /><hr/>
+				
+				  <ul>
+            <h3>
+				 <a href="../table/userdetail.html"> <li>User details</a><br />
+				 <a href="../admin/viewpro.html"> <li>Edit user</a><br />
+			 
+            </td>
+            
+            <td bgcolor = "#eee" width = "1050" height = "200">
+               
+			   <form action="handler.php">
+<fieldset>
+<legend>Profile</legend>
+
+<b>Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  : </b> <input name="name" type="text"  /><br/><hr/>
+<b>Email &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b> <input name="email" type="text"/><img src="i.png"width="30" title="example@gmail.com"/><br/><hr/>
+<!--b>User Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    : </b> <input name="name" type="text" /><br/><hr/>
+<b>Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     : </b> <input name="name" type="text" /><br/><hr/>
+<b>Confirm Password &nbsp : </b> <input name="name" type="text" /><br/><hr/-->
+
+
+<b>Gender &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:</b>
+<input name="gender" type="radio" value="male"/>male
+<input name="gender" type="radio" value="female"/>Female
+<input name="gender" type="radio" value="other"/>Other<br/><br/>
+
+
+
+
+<table  >
+<td><b>Date of Birth  &nbsp &nbsp &nbsp &nbsp &nbsp :</b>
+<td>dd<br/><input name="dd" type="text" / >  /
+<td>mm<br/><input name="mm" type="text"/ > /
+<td>yyyy<br/><input name="yyyy" type="text"/ ><td>(dd/mm/yyyy)
+</td>
+
+</table>
+<hr/>
+
+<b>Type &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b><input type="text"/><hr/>
+<b>Joined &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : </b><input type="text" value="since "/><hr/>
+
+
+	<input type="submit" value="Delete"/>&nbsp &nbsp
+<a href="../table/userdetail.html"> <button type="button">Back</button></a>
+
+</fieldset>
+</form>
+			   
+            </td>
+         </tr>
+         <tr>
+            <td colspan = "2" bgcolor = "steelblue">
+               <center style="color:white">
+                  Copyright © 2017
+               </center>
+            </td>
+         </tr>
+         
+      </table>
+   </body>
+
+</html>

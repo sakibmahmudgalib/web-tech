@@ -1,0 +1,95 @@
+<?php
+	session_start();
+?>
+<html>
+
+   <head>
+      <title>AIUB BOOK STORE</title>
+   </head>
+
+   <body>
+      <table width = "100%" height="">
+         
+         <tr>
+            <td colspan = "2" bgcolor = "steelblue" align="right" >
+               <h1 style="color:white" align="center">AIUB BOOK STORE</h1>
+			   <a href="../table/home.html"  ><b style="color:white"><font size="4.5" >Logged in as<font size="5"> <?php echo $user['uname']; ?></font> </font></b></a>
+				<b>|</b>
+				<a href="../table/login.html" ><b style="color:white"><font size="4.5">Logout</font></a> 
+            </td>
+         </tr>
+         <tr valign = "top" height="500">
+            <td bgcolor = "#48D1CC" width ="">
+               <b>Account</b><br /><hr/>
+			   <ul>
+            <h3>
+				 <a href="../admin/bord.html"> <li> Dashbord</a><br />
+				 <a href="../admin/adminpro.html"> <li> View Profile</a><br />
+				 <a href="../admin/editpro.html"> <li>Edit Profile</a><br />
+				 <a href="../admin/profile.html"> <li> Change Profile Picture</a><br />
+				<a href="../admin/reset_password.html">  <li> Change Password</a><br />
+				<a href="../table/login.html">  <li> Logout</a><br />
+							
+				
+			</h3>
+			   </ul><hr/>
+			   
+			   <b>User</b><br /><hr/>
+			      <ul>
+            <h3>
+				 <a href="../table/userdetail.html"> <li> uesr details</a><br />
+				 <a href="../admin/viewpro.html"> <li> Edit profile</a><br />
+			</h3>
+			   
+			   
+            </td>
+			
+			
+            
+            <td bgcolor = "#eee" width = "1050" height = "200">
+			
+			<!--h3>Academic Qualification:</h3-->
+ <table border="1" align="" >
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>User Name</th>
+		<!--th>pass Year</th-->
+	</tr>
+	
+	<tr>	<td>saki mahmud galib</td> <td>galib@gmail.com </td> <td>galib</td> <!--b align="center" style="position:absolute;top:130px;right:260px"--><td><a href="../admin/viewpro.html">Details |<a href="../admin/editpro.html">Edit |<a href="../admin/viewpro-del.html"> Delete</td> </tr>
+	<tr>	<td>foysal bin</td> <td>g@gmail.com </td> <td>sakib</td>  <!--b align="center" style="position:absolute;top:150px;right:260px"--><td><a href="../admin/viewpro.html">Details |<a href="../admin/editpro.html">Edit |<a href="../admin/viewpro-del.html"> Delete</td> </tr>
+	<tr>	<td>mehedi hasan</td> <td>a@gmail.com </td> <td>foysal</td> <!--b align="center" style="position:absolute;top:170px;right:260px"--><td><a href="../admin/viewpro.html">Details |<a href="../admin/editpro.html">Edit |<a href="../admin/viewpro-del.html"> Delete</td> </tr>
+	
+	
+	<!--table align="center" style="position:absolute;top:220px;right:650px"-->
+
+	<!--td><input type="submit"/></td-->
+	
+<!--/table-->
+
+</table><br/>
+
+<table align="" width="70%">
+<tr><td>
+	
+	<b><input type="submit"/></b>
+
+</table>
+
+
+              <!-- ADD YOUR CODE HERE...<font size="6"><?php echo $_REQUEST['auname']; ?></font-->
+            </td>
+         </tr>
+         <tr>
+            <td colspan = "2" bgcolor = "steelblue">
+               <center style="color:white">
+                  Copyright © 2017
+               </center>
+            </td>
+         </tr>
+         
+      </table>
+   </body>
+
+</html>
